@@ -9,7 +9,7 @@
 body {
   font-family: "McLaren", cursive;
   height: 100vh;
-  background-image: url("/wea2.jpg");
+  background-image: url("./weather.jpg");
   background-repeat: no-repeat repeat;
   background-size: cover;
   background-position: 100% 100%;
