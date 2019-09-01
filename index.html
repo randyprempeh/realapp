@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./main.css">
+    <title>What´s the weather</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="weatherlogo">
+                <img src="./favicon.png" alt="" width="150" height="150">
+                <h1 id="weather-type">weather</h1>
+            </div>
+            <ul class="big-w">
+                <li><a href="">Asia</a></li>
+                <li><a href="">Africa</a></li>
+                <li><a href="">North America</a></li>
+                <li><a href="">South America</a></li>
+                <li><a href="">Antarctica</a></li>
+                <li><a href="">Europe</a></li>
+                <li><a href="">Australia</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>This is how it today looks</h1>
+
+    <section></section>
+    <div class="weather-wrapper">
+        <div class="temperature">
+            <div class="temp-desc">partly cloudy</div>
+           <canvas class="icon" width="128" height="128"></canvas>
+            <div class="section-temp">
+                <h2 class="temperature-degree">15</h2>
+                <span id="degree-fah">F</span>
+            </div>
+        </div>
+        <div class="location">
+            <h2 class="location-country">Timezone</h2>
+            <span class="location-date"></span>
+        </div>
+    </div>
+    <script src="skycons.js"> </script>     
+    <script src="app.js"> </script>
+</body>
+
+</html>
