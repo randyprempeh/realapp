@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css?family=McLaren&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "McLaren", cursive;
+  height: 100vh;
+  background-image: url("/wea2.jpg");
+  background-repeat: no-repeat repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+h1 {
+  padding: 3rem;
+  font-size: 3vw;
+  color: #fff;
+}
+
+header {
+  width: 100%;
+  display: flex;
+}
+nav {
+  background: rgba(0, 0, 0, 0.9);
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  color: #fff;
+}
+
+.weatherlogo img {
+  border-radius: 50%;
+}
+
+#weather-type {
+  font-size: 6.9rem;
+  color: #a3ff0f;
+  overflow: hidden;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-family: "Dancing Script", cursive;
+  display: flex;
+  align-items: flex-end;
+  margin-left: -3.3rem;
+}
+
+.weatherlogo {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.big-w {
+  list-style: none;
+  display: grid;
+}
+.big-w li a {
+  text-decoration: none;
+  margin-bottom: 2px;
+  color: #999;
+}
+
+section {
+  width: 900px;
+  margin: 0 auto;
+  height: 550px;
+  border: 4px solid cornsilk;
+  background: url("./sky.jpg");
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.weather-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 2;
+    width: 50%;
+    margin: .5rem auto 2rem auto;
+    text-align: center;
+    height: 100%;
+}
+
+.weather-wrapper::before {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 20px;
+  border-radius: 50px;
+  content: " ";
+  text-shadow: none;
+  background-color: #a3ff0f;
+  width: 100px;
+}
+
+.weather-wrapper::after {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 20px;
+  content: " ";
+  text-shadow: none;
+  border-radius: 50px;
+  background-color: red;
+  width: 100px;
+}
+
+.temperature {
+  width: 350px;
+  margin: 0 auto;
+  border: 2px solid none;
+  border-radius: 7px;
+  box-shadow: 5px 2px 15px 5px rgb(33, 35, 36);
+  height: 250px;
+  padding: 2rem;
+}
+.temperature:hover {
+  box-shadow: 5px 2px 15px 5px black;
+  animation: all 3s;
+
+}
+
+
+
+.section-temp {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#degree-fah {
+  margin: 4px;
+}
+
+.location {
+  width: 350px;
+  margin: 0 auto;
+  border-radius: 3px;
+  height: 100px;
+  padding: 2rem;
+  border: 2px solid transparent;
+  box-shadow: 3px 5px 5px 1px black;
+}
